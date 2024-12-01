@@ -11,7 +11,7 @@ const Menu = () => {
   const { toggleMenu } = useMenu();
   const router = useRouter();
 
-  // Load cart items from localStorage when the component mounts
+  // Load cart items from localStorage when the component mount
   useEffect(() => {
     const storedCartItems = localStorage.getItem("cartItems");
     if (storedCartItems) {
