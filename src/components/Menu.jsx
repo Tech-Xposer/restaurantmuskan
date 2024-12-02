@@ -55,18 +55,11 @@ const Menu = () => {
 
   return (
     <div className="backdrop-blur-md inset-0 fixed z-10 bg-black">
-      <div className="flex flex-col justify-center items-center h-screen w-full p-10 md:p-20 gap-10">
+      <div className="flex flex-col justify-center items-center h-screen w-full p-5 md:p-20 gap-10">
         <div className="flex justify-around h-auto items-center w-full">
-          <h1 className="text-8xl text-[#F4BE39] font-londrina text-center">
+          <h1 className="text-6xl text-[#F4BE39] font-londrina text-center">
             Menu
           </h1>
-
-          <button
-            className="h-fit text-[#F4BE39] font-quicksand border-2 border-[#F4BE39] px-2 py-1 border-solid rounded-md hover:bg-[#F4BE39] hover:text-black transition duration-200"
-            onClick={toggleMenu}
-          >
-            Fermer
-          </button>
         </div>
         <div className="flex flex-col space-y-8 overflow-auto p-5">
           {menu &&
@@ -106,9 +99,9 @@ const Menu = () => {
         </div>
       </div>
       <button
-        className="text-[#F4BE39] font-quicksand border-2 border-[#F4BE39] px-3 py-2 border-solid rounded-md hover:bg-[#F4BE39] hover:text-white transition duration-200 fixed bottom-10 right-10 xl:right-32 z-50 text-3xl lg:text-3xl "
+        className="text-[#F4BE39] font-quicksand border-2 border-[#F4BE39] px-3 py-2 border-solid rounded-md hover:bg-[#F4BE39] hover:text-white transition duration-200 fixed bottom-10 right-10 xl:right-32 z-50 text-2xl lg:text-3xl "
         onClick={() => {
-          toggleMenu();
+
           router.push("/checkout");
         }}
       >

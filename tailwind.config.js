@@ -12,6 +12,9 @@ module.exports = {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      londrina: ["Londrina Solid", "cursive"],
+    },
   },
   plugins: [],
 };
