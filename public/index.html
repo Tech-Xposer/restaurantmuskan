@@ -1673,20 +1673,21 @@
                                 >
                                   <div class="pt-food-menu-item">
                                     <div class="pt-food-menu-img">
-                                      <img
-                                        loading="lazy"
-                                        decoding="async"
-                                        width="370"
-                                        height="271"
-                                        src="images/1.png"
-                                        class="attachment-370x9999 size-370x9999 wp-image-6169"
-                                        alt=""
-                                        srcset="
- images/1.png
-                                        "
-                                        sizes="(max-width: 370px) 100vw, 370px"
-                                      />
+                                      <a href="/menu">
+                                        <img
+                                          loading="lazy"
+                                          decoding="async"
+                                          width="370"
+                                          height="271"
+                                          src="images/1.png"
+                                          class="attachment-370x9999 size-370x9999 wp-image-6169"
+                                          alt=""
+                                          srcset="images/1.png"
+                                          sizes="(max-width: 370px) 100vw, 370px"
+                                        />
+                                      </a>
                                     </div>
+                                    
                                     <div class="pt-food-menu-main">
                                       <div class="pt-food-menu-header">
                                         <h6 class="pt-food-menu-title">
@@ -3598,5 +3599,22 @@ images/3.png
       src="js/elementor.min.js"
       id="loftocean-elementor-frontend-js"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select all images inside `.pt-food-menu-img`
+        const foodMenuImages = document.querySelectorAll(".pt-food-menu-img img");
+        
+        foodMenuImages.forEach((image) => {
+          // Wrap each image in an anchor tag dynamically
+          const anchor = document.createElement("a");
+          anchor.href = "/menu";
+    
+          // Move the image into the anchor tag
+          image.parentNode.insertBefore(anchor, image);
+          anchor.appendChild(image);
+        });
+      });
+    </script>
+    
   </body>
 </html>
