@@ -103,7 +103,7 @@ const Checkout = () => {
     .toFixed(2);
 
   return (
-    <div className="flex flex-col items-center justify-center p-5 text-white pt-[100px] md:[h-140vh] w-full bg-black ">
+    <div className="flex flex-col items-center justify-center p-5 text-white pt-[50px]  w-full bg-black  ">
       <h2 className="text-5xl mb-4 text-[#F4BE39] font-londrina">Checkout</h2>
 
       {orders.length ? (
@@ -172,7 +172,7 @@ const Checkout = () => {
           </div>
           <div className="flex flex-col gap-4 items-center m-5 ">
             <div className="flex item-center justify-center gap-5 relative mt-5">
-              <span className="text-sm text-red-500 font-shadows fixed mt-[-22px] font-bold mr-36 ">
+              <span className="text-sm text-red-500 font-shadows absolute mt-[-22px] font-bold mr-4 w-full">
                 -10% Surplace
               </span>
 
