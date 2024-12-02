@@ -1633,7 +1633,7 @@ body {
               marginBlockEnd: "25px",
             }}
           >
-            158 avenue Victor Hugo, 92140 . Clamart . France{" "}
+            158 avenue Victor Hugo, 92140 . Clamart{" "}
             <br
               style={{
                 border: "0px solid rgb(229, 231, 235)",
@@ -3353,7 +3353,7 @@ body {
               marginBlockEnd: "25px",
             }}
           >
-            158 avenue Victor Hugo, 92140 . Clamart . France{" "}
+            158 avenue Victor Hugo, 92140 . Clamart {" "}
             <br
               style={{
                 border: "0px solid rgb(229, 231, 235)",
