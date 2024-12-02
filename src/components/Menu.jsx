@@ -99,7 +99,7 @@ const Menu = () => {
         </div>
       </div>
       <button
-        className="text-[#F4BE39] font-quicksand border-2 border-[#F4BE39] px-3 py-2 border-solid rounded-md hover:bg-[#F4BE39] hover:text-white transition duration-200 fixed bottom-10 right-10 xl:right-32 z-50 text-2xl lg:text-3xl "
+        className="text-[#F4BE39] font-quicksand border-2 border-[#F4BE39] px-3 py-2 border-solid rounded-md hover:bg-[#F4BE39] hover:text-white transition duration-200 fixed bottom-10 right-10 xl:right-32 z-50 text-md lg:text-3xl "
         onClick={() => {
 
           router.push("/checkout");
