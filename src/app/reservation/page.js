@@ -8,7 +8,7 @@
 //           <section className="flex flex-col justify-center align-center">
 //             <h1 className="text-4xl">Réservation en ligne</h1>
 //             <p>
-//               Demande de réservation <span>01 46 66 25 79</span> ou remplissez
+//               Demande de réservation <span> 0147650016</span> ou remplissez
 //               le formulaire de commande
 //             </p>
 //           </section>
@@ -79,7 +79,7 @@ export default function Component() {
                 color: "#e4c590",
               }}
             >
-              01 46 66 25 79
+              0147650016
             </a>{" "}
             ou remplissez le formulaire de commande
           </p>
@@ -1592,7 +1592,7 @@ body {
               position: "relative",
             }}
           >
-            - 01 46 66 25 79
+            - 0147650016
           </a>
           <div
             className="separator"
@@ -1633,7 +1633,7 @@ body {
               marginBlockEnd: "25px",
             }}
           >
-            21 Boulevard Jean-Jaurès 94260 FRESNES{" "}
+            158 avenue Victor Hugo, 92140 . Clamart . France{" "}
             <br
               style={{
                 border: "0px solid rgb(229, 231, 235)",
@@ -1805,7 +1805,7 @@ body {
                 color: "#e4c590",
               }}
             >
-              01 46 66 25 79
+              0147650016
             </a>{" "}
             ou remplissez le formulaire de commande
           </p>
@@ -3250,7 +3250,7 @@ body {
           }}
         />
         <div
-          className="form-right text-center"
+          className="form-right text-center h-[70vh]"
           style={{
             border: "0px solid rgb(229, 231, 235)",
             margin: "0px",
@@ -3312,7 +3312,7 @@ body {
               position: "relative",
             }}
           >
-            - 01 46 66 25 79
+            - 0147650016
           </a>
           <div
             className="separator"
@@ -3353,7 +3353,7 @@ body {
               marginBlockEnd: "25px",
             }}
           >
-            21 Boulevard Jean-Jaurès 94260 FRESNES{" "}
+            158 avenue Victor Hugo, 92140 . Clamart . France{" "}
             <br
               style={{
                 border: "0px solid rgb(229, 231, 235)",
