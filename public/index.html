@@ -1343,97 +1343,101 @@
                               </div>
                             </section>
                             <section
-                              class="elementor-section elementor-inner-section elementor-element elementor-element-70b10027 elementor-reverse-mobile pt-animation-medium-offset elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-                              data-id="70b10027"
-                              data-element_type="section"
-                              data-settings='{"animation":"fadeInRight","animation_delay":500}'
-                            >
-                              <div
-                                class="elementor-container elementor-column-gap-no"
-                              >
-                                <div
-                                  class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-28263d7f"
-                                  data-id="28263d7f"
-                                  data-element_type="column"
-                                >
-                                  <div
-                                    class="elementor-widget-wrap elementor-element-populated"
-                                  >
-                                    <div
-                                      class="elementor-element elementor-element-56bca662 elementor-widget elementor-widget-pt_food_card"
-                                      data-id="56bca662"
-                                      data-element_type="widget"
-                                      data-widget_type="pt_food_card.default"
-                                    >
-                                      <div class="elementor-widget-container">
-                                        <div class="pt-food-card">
-                                          <div class="pt-fc-info">
-                                            <div class="pt-fc-info-wrap">
-                                              <h4 class="pt-fc-info-title">
-                                                MURGH BIRYANI
-                                              </h4>
-                                              <div class="pt-fc-info-text">
-                                                <p>
-                                                  LE BIRYANI EST LE PLAT MAGHLAI COMPOSÉ DE RIZ BASMATI
-                                                </p>
-                                              </div>
-                                              <div class="pt-fc-info-extra">
-                                                <span class="info-label"
-                                                  >Appétissant</span
-                                                >
-                                                <span class="info-content"
-                                                  >€13.5</span
-                                                >
-                                              </div>
-                                              <div class="pt-fc-info-extra">
-                                                <span class="info-label">
-                                                  <a href="/menu" class="command-link">Commandez!</a>
-                                                </span>
-                                                <span class="info-content">--------</span
-                                                >
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4556d611"
-                                  data-id="4556d611"
-                                  data-element_type="column"
-                                >
-                                  <div
-                                    class="elementor-widget-wrap elementor-element-populated"
-                                  >
-                                    <div
-                                      class="elementor-element elementor-element-594e1d1 elementor-invisible elementor-widget elementor-widget-image"
-                                      data-id="594e1d1"
-                                      data-element_type="widget"
-                                      data-settings='{"_animation":"rotateIn","_animation_delay":500}'
-                                      data-widget_type="image.default"
-                                    >
-                                      <div class="elementor-widget-container">
-                                        <img
-                                          loading="lazy"
-                                          decoding="async"
-                                          width="780"
-                                          height="781"
-                                          src="images/pizza-02-780x781.png"
-                                          class="attachment-780x9999 size-780x9999 wp-image-6164"
-                                          alt=""
-                                          srcset="
-                                          images/pizza-02-780x781.png,
-                                          "
-                                          sizes="(max-width: 780px) 100vw, 780px"
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </section>
+  class="elementor-section elementor-inner-section elementor-element elementor-element-70b10027 elementor-reverse-mobile pt-animation-medium-offset elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+  data-id="70b10027"
+  data-element_type="section"
+  data-settings='{"animation":"fadeInRight","animation_delay":500}'
+>
+  <!-- Inline CSS for this specific section -->
+  <style>
+    .pt-fc-info-extra {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .info-label {
+      flex-grow: 1;
+      margin-right: 10px; /* Add some space between the label and price */
+    }
+
+    .info-content {
+      white-space: nowrap; /* Prevent wrapping of the price */
+    }
+  </style>
+
+  <div class="elementor-container elementor-column-gap-no">
+    <div
+      class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-28263d7f"
+      data-id="28263d7f"
+      data-element_type="column"
+    >
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div
+          class="elementor-element elementor-element-56bca662 elementor-widget elementor-widget-pt_food_card"
+          data-id="56bca662"
+          data-element_type="widget"
+          data-widget_type="pt_food_card.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="pt-food-card">
+              <div class="pt-fc-info">
+                <div class="pt-fc-info-wrap">
+                  <h4 class="pt-fc-info-title">MURGH BIRYANI</h4>
+                  <div class="pt-fc-info-text">
+                    <p>
+                      le biryani est le plat maghlai composé de riz basmati
+                    </p>
+                  </div>
+                  <div class="pt-fc-info-extra">
+                    <span class="info-label">Appétissant</span>
+                    <span class="info-content">€13.5&nbsp;</span>
+                  </div>
+                  <div class="pt-fc-info-extra">
+                    <span class="info-label">
+                      <a href="/menu" class="command-link">Commandez!</a>
+                    </span>
+                    <span class="info-content">--------</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4556d611"
+      data-id="4556d611"
+      data-element_type="column"
+    >
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div
+          class="elementor-element elementor-element-594e1d1 elementor-invisible elementor-widget elementor-widget-image"
+          data-id="594e1d1"
+          data-element_type="widget"
+          data-settings='{"_animation":"rotateIn","_animation_delay":500}'
+          data-widget_type="image.default"
+        >
+          <div class="elementor-widget-container">
+            <img
+              loading="lazy"
+              decoding="async"
+              width="780"
+              height="781"
+              src="images/pizza-02-780x781.png"
+              class="attachment-780x9999 size-780x9999 wp-image-6164"
+              alt=""
+              srcset="images/pizza-02-780x781.png"
+              sizes="(max-width: 780px) 100vw, 780px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
                             <section
                               class="elementor-section elementor-inner-section elementor-element elementor-element-a6e7a40 pt-animation-medium-offset elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
                               data-id="a6e7a40"
