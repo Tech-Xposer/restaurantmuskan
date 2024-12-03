@@ -5,11 +5,12 @@ import { specialMenu } from "@/data/menu.js";
 import { useRouter } from "next/navigation.js";
 import { toast } from "react-toastify";
 import { useMenu } from "@/contexts/MenuContext";
+import useNavigate from "next/navigation";
+import Link from "next/link";
 
 const Menu = () => {
   const [cartItems, setCartItems] = useState([]);
   const { toggleMenu } = useMenu();
-  const router = useRouter();
 
   // Load cart items from localStorage when the component mount
   useEffect(() => {
@@ -57,18 +58,21 @@ const Menu = () => {
     <div className="backdrop-blur-md inset-0 fixed z-10 bg-black">
       <div className="flex flex-col justify-center items-center h-screen w-full p-5 md:p-20 gap-10">
         <div className="flex justify-around h-auto items-center w-full">
-          <h1 className="text-6xl text-[#F4BE39] font-londrina text-center">
+          <h1 className="text-4xl md:text-6xl text-[#F4BE39] font-londrina text-center">
             Menu
           </h1>
+          <button className="text-[#F4BE39] border-[#F4BE39] border rounded-sm px-4 py-1">
+            <Link href={"/"}>Back</Link>
+          </button>
         </div>
         <div className="flex flex-col space-y-8 overflow-auto p-5">
           {menu &&
             menu.map((categoryItem, index) => (
               <div key={index} className="flex flex-col space-y-8">
-                <span className="test2xl md:text-4xl text-[#ff6026] font-londrina block mb-2 cursor-pointer">
+                <span className="text-xl md:text-3xl text-[#ff6026] font-londrina block mb-2 cursor-pointer">
                   {categoryItem.category}
                 </span>
-                <p className="font-quicksand text-xl text-white mb-4">
+                <p className="font-quicksand text-md text-white mb-4">
                   {categoryItem.description}
                 </p>
 
@@ -101,7 +105,6 @@ const Menu = () => {
       <button
         className="text-[#F4BE39] font-quicksand border-2 border-[#F4BE39] px-3 py-2 border-solid rounded-md hover:bg-[#F4BE39] hover:text-white transition duration-200 fixed bottom-10 right-10 xl:right-32 z-50 text-md lg:text-3xl "
         onClick={() => {
-
           router.push("/checkout");
         }}
       >
@@ -180,13 +183,13 @@ const DishCard = ({ menuItem }) => {
   return (
     <div className="flex gap-5 overflow-auto p-5 w-full items-center">
       <div className="flex flex-col items-start gap-1">
-        <span className="text-2xl md:text-4xl text-[#F4BE39] font-londrina block mb-2 cursor-pointer">
+        <span className="text-xl md:text-2xl text-[#F4BE39] font-londrina block mb-2 cursor-pointer">
           {menuItem.name}
         </span>
-        <p className="font-quicksand text-xl text-white mb-4">
+        <p className="font-quicksand text-sm md:text-xl text-white mb-4">
           {menuItem.description}
         </p>
-        <span className="font-quicksand text-2xl text-white">
+        <span className="font-quicksand text-xl md:text-2xl text-white">
           {menuItem.price} €
         </span>
 
@@ -268,13 +271,13 @@ const SpecialDishCard = ({ menuItem }) => {
 
   return (
     <div className="flex flex-col items-start gap-1">
-      <span className="text-2xl md:text-4xl text-[#F4BE39] font-londrina block mb-2 cursor-pointer">
+      <span className="text-xl md:text-3xl text-[#F4BE39] font-londrina block mb-2 cursor-pointer">
         {menuItem.name}
       </span>
-      <p className="font-quicksand text-xl text-white mb-4">
+      <p className="font-quicksand text-sm md:text-xl text-white mb-4">
         {menuItem.description}
       </p>
-      <span className="font-quicksand text-2xl text-white">
+      <span className="font-quicksand text-xl md:text-2xl text-white">
         {menuItem.price} €
       </span>
 
@@ -302,7 +305,7 @@ const SpecialDishCard = ({ menuItem }) => {
                       <label
                         key={itemIndex}
                         htmlFor={`item-${index}-${itemIndex}`}
-                        className="ms-2 font-medium text-white text-xl md:text-2xl font-quicksand"
+                        className="ms-2 font-medium text-white text-md md:text-xl font-quicksand"
                       >
                         {item.name}
                       </label>
