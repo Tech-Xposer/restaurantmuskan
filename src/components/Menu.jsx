@@ -2,15 +2,14 @@
 import { useState, useEffect } from "react";
 import menu from "@/data/menu.js";
 import { specialMenu } from "@/data/menu.js";
-import { useRouter } from "next/navigation.js";
 import { toast } from "react-toastify";
 import { useMenu } from "@/contexts/MenuContext";
-import useNavigate from "next/navigation";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const Menu = () => {
   const [cartItems, setCartItems] = useState([]);
-  const { toggleMenu } = useMenu();
+  const router = useRouter();
 
   // Load cart items from localStorage when the component mount
   useEffect(() => {
@@ -55,7 +54,7 @@ const Menu = () => {
   };
 
   return (
-    <div className=" bg-black/90 ">
+    <div className="bg-black/70 ">
       <div className="flex flex-col justify-center items-center  w-full p-5 md:p-20 gap-10">
         <div className="flex justify-around h-auto items-center w-full">
           <h1 className="text-4xl md:text-6xl text-[#F4BE39] font-londrina text-center">
@@ -72,7 +71,7 @@ const Menu = () => {
                 <span className="text-xl md:text-3xl text-[#ff6026] font-londrina block mb-2 cursor-pointer">
                   {categoryItem.category}
                 </span>
-                <p className="font-quicksand text-md text-white mb-4">
+                <p className="font-quicksand text-md md:text-xl text-white mb-4">
                   {categoryItem.description}
                 </p>
 
@@ -305,7 +304,7 @@ const SpecialDishCard = ({ menuItem }) => {
                       <label
                         key={itemIndex}
                         htmlFor={`item-${index}-${itemIndex}`}
-                        className="ms-2 font-medium text-white text-md md:text-xl font-quicksand"
+                        className="ms-2 font-medium text-white text-md md:text-lg font-quicksand"
                       >
                         {item.name}
                       </label>
