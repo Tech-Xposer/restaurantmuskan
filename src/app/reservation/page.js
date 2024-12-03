@@ -5,7 +5,7 @@ import React from "react";
 export default function Component() {
   return (
     <div className="m-auto w-[75%] flex justify-center md:h-screen items-center flex-col" >
-      <button className="border border-white px-3 py-1 rounded-sm mt-5 absolute top-0 left-5"> <Link href={"/"}>Back</Link></button>
+      <button className="border border-white px-3 py-1 rounded-sm mt-5 absolute top-0 left-5"> <Link href={"/"}>fermer</Link></button>
       <div className="hidden md:flex flex-col md:flex-row ">
         <form
           className="form-left bg-black h-[700px]"

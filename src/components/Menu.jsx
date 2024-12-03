@@ -61,7 +61,7 @@ const Menu = () => {
             Menu
           </h1>
           <button className="text-[#F4BE39] border-[#F4BE39] border rounded-sm px-4 py-1">
-            <Link href={"/"}>Back</Link>
+            <Link href={"/"}>fermer</Link>
           </button>
         </div>
         <div className="flex flex-col space-y-8  p-5">
