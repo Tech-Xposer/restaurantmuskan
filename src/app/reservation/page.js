@@ -1,30 +1,11 @@
-// import React from "react";
 
-// const page = () => {
-//   return (
-//     <div className="text-white bg-white/10 h-screen w-full">
-//       <div>
-//         <div className="left">
-//           <section className="flex flex-col justify-center align-center">
-//             <h1 className="text-4xl">Réservation en ligne</h1>
-//             <p>
-//               Demande de réservation <span> 0147650016</span> ou remplissez
-//               le formulaire de commande
-//             </p>
-//           </section>
-//         </div>
-//         <div className="right"></div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default page;
+import Link from "next/link";
 import React from "react";
 
 export default function Component() {
   return (
-    <div className="m-auto w-[75%] flex justify-center md:h-screen items-center">
+    <div className="m-auto w-[75%] flex justify-center md:h-screen items-center flex-col" >
+      <button className="border border-white px-3 py-1 rounded-sm mt-5 absolute top-0 left-5"> <Link href={"/"}>Back</Link></button>
       <div className="hidden md:flex flex-col md:flex-row ">
         <form
           className="form-left bg-black h-[700px]"
@@ -3353,7 +3334,7 @@ body {
               marginBlockEnd: "25px",
             }}
           >
-            158 avenue Victor Hugo, 92140 . Clamart {" "}
+            158 avenue Victor Hugo, 92140 . Clamart{" "}
             <br
               style={{
                 border: "0px solid rgb(229, 231, 235)",

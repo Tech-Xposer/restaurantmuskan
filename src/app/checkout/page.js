@@ -41,8 +41,6 @@ const Checkout = () => {
     switch (type) {
       case "takeaway":
         return "À Emporter";
-      case "home-delivery":
-        return "Livraison à domicile";
     }
   };
 
@@ -103,7 +101,7 @@ const Checkout = () => {
     .toFixed(2);
 
   return (
-    <div className="flex flex-col items-center justify-center p-5 text-white pt-[50px]  w-full bg-black  ">
+    <div className="flex flex-col items-center justify-center p-5 text-white pt-[50px]  w-full  ">
       <h2 className="text-5xl mb-4 text-[#F4BE39] font-londrina">Checkout</h2>
 
       {orders.length ? (
@@ -170,11 +168,9 @@ const Checkout = () => {
               </tbody>
             </table>
           </div>
-          <div className="flex flex-col gap-4 items-center m-5 ">
+          {/* <div className="flex flex-col gap-4 items-center m-5 ">
             <div className="flex item-center justify-center gap-5 relative mt-5">
-              <span className="text-sm text-red-500 font-shadows absolute mt-[-22px] font-bold mr-4 w-full">
-                -10% Surplace
-              </span>
+              
 
               <span
                 onClick={() => setOrderType("takeaway")}
@@ -186,18 +182,9 @@ const Checkout = () => {
               >
                 À Emporter
               </span>
-              <span
-                onClick={() => setOrderType("home-delivery")}
-                className={`cursor-pointer font-londrina ${
-                  orderType === "home-delivery"
-                    ? "bg-[#F4BE39] p-2 text-black "
-                    : "text-white"
-                }`}
-              >
-                Livraison à domicile
-              </span>
+             
             </div>
-          </div>
+          </div> */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-lg">
@@ -247,40 +234,6 @@ const Checkout = () => {
               />
             </div>
 
-            {orderType === "home-delivery" && (
-              <>
-                <div>
-                  <label htmlFor="address" className="block text-lg">
-                    Address
-                  </label>
-                  <input
-                    type="text"
-                    id="address"
-                    name="address"
-                    value={formData.address}
-                    onChange={handleChange}
-                    className="w-full p-2 border border-[#F4BE39] rounded bg-transparent text-white"
-                    required
-                    placeholder="Your Address"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="zipcode" className="block text-lg">
-                    Zip Code
-                  </label>
-                  <input
-                    type="text"
-                    id="zipcode"
-                    name="zipcode"
-                    value={formData.zipcode}
-                    onChange={handleChange}
-                    className="w-full p-2 border border-[#F4BE39] rounded bg-transparent text-white"
-                    required
-                    placeholder="Your Zip Code"
-                  />
-                </div>
-              </>
-            )}
             {error && <p className="text-red-500">{error}</p>}
             <button
               type="submit"
