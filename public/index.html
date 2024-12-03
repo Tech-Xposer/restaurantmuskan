@@ -844,9 +844,17 @@
                       </div>
                     </div>
 
-                    <div class="centered-gif-container">
-                      <a href="https://www.instagram.com/restaurantmuskan?igsh=ZGFyaW4xN2J5bWF5&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                        <img src="images/Suivez-nous-unscreen.gif" alt="Instagram GIF" class="infinite-gif" />
+                    <div class="centered-gif-container mobile-only">
+                      <a
+                        href="https://www.instagram.com/restaurantmuskan?igsh=ZGFyaW4xN2J5bWF5&utm_source=qr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="images/Suivez-nous-unscreen.gif"
+                          alt="Instagram GIF"
+                          class="infinite-gif"
+                        />
                       </a>
                     </div>
                     
@@ -854,10 +862,10 @@
                       /* General styles for the GIF container */
                       .centered-gif-container {
                         display: flex;
-                        justify-content: center; 
+                        justify-content: center;
                         align-items: center;
                         position: absolute;
-                        top: 74%; /* Vertical position remains the same */
+                        top: 15%; /* Vertical position remains the same */
                         left: auto; /* Default horizontal position for mobile */
                         width: 100%;
                         height: auto;
@@ -868,17 +876,17 @@
                       .infinite-gif {
                         width: 150px; /* Adjust size as needed */
                         height: auto; /* Maintain aspect ratio */
-                        cursor: pointer; 
+                        cursor: pointer;
                       }
                     
-                      /* Media query for larger screens (like PC) */
+                      /* Media query for hiding the GIF on PC */
                       @media (min-width: 768px) {
                         .centered-gif-container {
-                          left: 50%; /* Center horizontally on larger screens */
-                          transform: translateX(-50%); /* Correct horizontal centering */
+                          display: none; /* Hide the container on larger screens */
                         }
                       }
                     </style>
+                    
                     
                     
                   </section>
