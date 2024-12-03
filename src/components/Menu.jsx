@@ -55,8 +55,8 @@ const Menu = () => {
   };
 
   return (
-    <div className="backdrop-blur-md inset-0 fixed z-10 bg-black">
-      <div className="flex flex-col justify-center items-center h-screen w-full p-5 md:p-20 gap-10">
+    <div className=" bg-black/90 ">
+      <div className="flex flex-col justify-center items-center  w-full p-5 md:p-20 gap-10">
         <div className="flex justify-around h-auto items-center w-full">
           <h1 className="text-4xl md:text-6xl text-[#F4BE39] font-londrina text-center">
             Menu
@@ -65,7 +65,7 @@ const Menu = () => {
             <Link href={"/"}>Back</Link>
           </button>
         </div>
-        <div className="flex flex-col space-y-8 overflow-auto p-5">
+        <div className="flex flex-col space-y-8  p-5">
           {menu &&
             menu.map((categoryItem, index) => (
               <div key={index} className="flex flex-col space-y-8">
@@ -181,7 +181,7 @@ const DishCard = ({ menuItem }) => {
   };
 
   return (
-    <div className="flex gap-5 overflow-auto p-5 w-full items-center">
+    <div className="flex gap-5  p-5 w-full items-center ">
       <div className="flex flex-col items-start gap-1">
         <span className="text-xl md:text-2xl text-[#F4BE39] font-londrina block mb-2 cursor-pointer">
           {menuItem.name}
