@@ -843,7 +843,46 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="centered-gif-container">
+                      <a href="https://www.instagram.com/restaurantmuskan?igsh=ZGFyaW4xN2J5bWF5&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Suivez-nous-unscreen.gif" alt="Instagram GIF" class="infinite-gif" />
+                      </a>
+                    </div>
+                    
+                    <style>
+                      /* General styles for the GIF container */
+                      .centered-gif-container {
+                        display: flex;
+                        justify-content: center; 
+                        align-items: center;
+                        position: absolute;
+                        top: 74%; /* Vertical position remains the same */
+                        left: auto; /* Default horizontal position for mobile */
+                        width: 100%;
+                        height: auto;
+                        transform: none;
+                      }
+                    
+                      /* Styles for the GIF itself */
+                      .infinite-gif {
+                        width: 150px; /* Adjust size as needed */
+                        height: auto; /* Maintain aspect ratio */
+                        cursor: pointer; 
+                      }
+                    
+                      /* Media query for larger screens (like PC) */
+                      @media (min-width: 768px) {
+                        .centered-gif-container {
+                          left: 50%; /* Center horizontally on larger screens */
+                          transform: translateX(-50%); /* Correct horizontal centering */
+                        }
+                      }
+                    </style>
+                    
+                    
                   </section>
+
                   <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-2d215213 pt-section-content-fullwidth elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                     data-id="2d215213" data-element_type="section" data-settings='{"background_background":"classic"}'>
