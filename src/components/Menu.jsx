@@ -263,9 +263,9 @@ const SpecialDishCard = ({ menuItem }) => {
   };
 
   const handleQuantityChange = (delta) => {
-    setQuantity((prevQuantity) => Math.max(1, prevQuantity + delta));
+    setQuantity((prevQuantity) => Math.max(0, prevQuantity + delta));
     saveCartToLocalStorage();
-    toast.info(`${menuItem.name} updated in cart`);
+    toast.success(`${menuItem.name} updated in cart`);
   };
 
   return (
