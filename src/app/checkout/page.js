@@ -103,7 +103,7 @@ const Checkout = () => {
     .toFixed(2);
 
   return (
-    <div className="flex flex-col items-center justify-center p-5 text-white pt-[50px]  w-full bg-black  ">
+    <div className="flex flex-col items-center justify-center p-5 text-white pt-[50px]  w-full bg-black/80  ">
       <h2 className="text-5xl mb-4 text-[#F4BE39] font-londrina">Checkout</h2>
 
       {orders.length ? (
