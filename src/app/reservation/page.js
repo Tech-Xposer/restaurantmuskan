@@ -9,7 +9,7 @@ export default function Component() {
       <div className="hidden md:flex flex-col md:flex-row ">
         <form
           className="form-left bg-black h-[700px]"
-          action="https://formspree.io/f/xzzbbznw"
+          action="https://formspree.io/f/mwpvwdqn"
           method="POST"
           style={{
             border: "0px solid rgb(229, 231, 235)",
