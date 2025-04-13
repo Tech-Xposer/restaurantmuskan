@@ -49,7 +49,7 @@ export default function Component() {
             Demande de réservation{" "}
             <a
               className="link"
-              href="tel:0146662579"
+              href="tel:0147650016"
               style={{
                 border: "0px solid rgb(229, 231, 235)",
                 margin: "0px",
@@ -1557,7 +1557,7 @@ body {
           </p>
           <a
             className="body-1 contact-number hover-underline"
-            href="tel:0146662579"
+            href="tel:0147650016"
             style={{
               border: "0px solid rgb(229, 231, 235)",
               margin: "0px",
@@ -1775,7 +1775,7 @@ body {
             Demande de réservation{" "}
             <a
               className="link"
-              href="tel:0146662579"
+              href="tel:0147650016"
               style={{
                 border: "0px solid rgb(229, 231, 235)",
                 margin: "0px",
@@ -3277,7 +3277,7 @@ body {
           </p>
           <a
             className="body-1 contact-number hover-underline"
-            href="tel:0146662579"
+            href="tel:0147650016"
             style={{
               border: "0px solid rgb(229, 231, 235)",
               margin: "0px",
