@@ -1735,7 +1735,7 @@ body {
       <div className="md:hidden">
         <form
           className=" form-left overflow-auto"
-          action="https://formspree.io/f/xzzbbznw"
+          action="https://formspree.io/f/mwpvwdqn"
           method="POST"
           style={{
             border: "0px solid rgb(229, 231, 235)",
